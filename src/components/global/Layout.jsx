@@ -1,21 +1,15 @@
 import Nav from '../../components/global/nav/Nav'
 import Footer from '../../components/global/footer/Footer'
+import Container from './Container'
 
 export default function Layout ({ children }) {
     return (
-        <div style={styles.layout}>
+        <div className='layout'>
             <Nav />
-            {children}
+            <Container>
+                {children}
+            </Container>
             <Footer />
         </div>
     )
-}
-
-const styles = {
-    layout: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        minHeight: '100vh',
-    }
 }
