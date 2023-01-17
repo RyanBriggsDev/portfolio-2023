@@ -1,7 +1,7 @@
-export default function Container ({children} ) {
+export default function Container ( {children}, props ) {
 
     return (
-        <div className="container">
+        <div className="container" style={{maxWidth: props.maxwidth}}>
             {children}
         </div>
     )
