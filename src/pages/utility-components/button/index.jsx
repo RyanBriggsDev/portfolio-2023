@@ -1,4 +1,4 @@
-import Button from "../../../components/global/button/Button"
+import Button from "../../../components/global/Button"
 
 function index() {
   return (

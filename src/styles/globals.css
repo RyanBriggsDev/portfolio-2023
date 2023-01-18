@@ -36,6 +36,9 @@ a, a:hover, a:focus, a:active {
 .container {
     width: 100%;
     max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 /* utility classes */
@@ -84,6 +87,7 @@ a, a:hover, a:focus, a:active {
 
         /* utility flex */
         .flex {display: flex;}
+        .f-d-col {flex-direction: column;}
         .fx-center {justify-content: center;}
         .fy-center {align-items: center;}
         .f-center {justify-content: center; align-items: center;}
@@ -117,4 +121,6 @@ a, a:hover, a:focus, a:active {
     }
 
     .btn-primary:hover {background-color: rgb(13, 58, 92);}
+
+    /* utility header */
 
