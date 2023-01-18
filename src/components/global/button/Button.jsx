@@ -1,7 +1,4 @@
-import BtnText from './BtnText'
-
-
-function Button(props) {
+export default function Button(props) {
 
     const styles = {
         button: {
@@ -23,9 +20,14 @@ function Button(props) {
             text={props.text}
             textClassName={props.textClassName}
             className={props.className}
+            fontSize={props.fontSize}
         />
     </button>
   )
 }
 
-export default Button
+function BtnText(props) {
+    return (
+      <p style={{textAlign: props.textAlign ? props.textAlign : 'center', fontSize: props.fontSize ? props.fontSize : '1rem'}} className={props.textClassName}>{props.text ? props.text : 'text'}</p>
+    )
+}
