@@ -1,3 +1,5 @@
+html{scroll-behavior:smooth}
+
 *, *::after, *::before, body {
     padding: 0;
     margin: 0;
@@ -9,7 +11,6 @@ body {
     color: white;
     font-size: 16px;
     min-height: 100vh;
-    min-width: 100vw;
 }
 
 li, a {
@@ -83,6 +84,11 @@ a, a:hover, a:focus, a:active {
         .gap-2 {gap: 2rem;}
         .gap-3 {gap: 3rem;}
 
+        /* utility width */
+
+        .w-100 {width: 100%;}
+        .w-50 {width: 50%;}
+
     /* display */
 
         /* utility flex */
@@ -124,3 +130,30 @@ a, a:hover, a:focus, a:active {
 
     /* utility header */
 
+
+    /* utility vertical scroll */
+    .vertical-scroll {
+        height: 100vh;
+        position: relative;
+    }
+
+    .vertical-scroll-link {
+        position: absolute;
+        bottom: 0;
+        width: 90vw;
+        height: 66px;
+        z-index: 11;
+        transition: bottom 300ms ease-in-out;
+    }
+
+    .vertical-scroll-link:hover{ 
+        bottom: 10px;
+    }
+
+    .vertical-scroll-arrow {
+        position: absolute;
+        width: 66px;
+        height: 66px;
+        z-index: 10;
+        bottom: 0;
+    }
