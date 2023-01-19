@@ -8,9 +8,9 @@ export default function VerticalScroll ({children, link, id, style, className}) 
     }
 
     return (
-        <div id={id} onClick={() => onClick()} className={`vertical-scroll flex f-center w-100 ${className}`} style={style}>
+        <div id={id ? id : ''} onClick={() => onClick()} className={`vertical-scroll flex f-center w-100 ${className ? className : ''}`} style={style ? style : null}>
             {children}
-            <Link className='vertical-scroll-link flex f-center' scroll={false} href={`#${link}`}>
+            <Link className='vertical-scroll-link flex f-center' scroll={false} href={`#${link ? link : ''}`}>
                 <div className="vertical-scroll-arrow" style={{backgroundImage: `url(${iconDownArrow.src})`}}></div>
             </Link>
         </div>
