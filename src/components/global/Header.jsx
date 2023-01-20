@@ -1,4 +1,5 @@
 import Button from './Button'
+import Dropdown from './Dropdown'
 
 export default function Header (props) {
 
@@ -6,13 +7,24 @@ export default function Header (props) {
         <div className={`header ${props.className}`}>
             <h1>{props.h1 ? props.h1 : 'h1'}</h1>
             <p>{props.label ? props.label : 'label'}</p>
-            <Button 
-                text={props.btnText}
-                textClassName={props.textClassName}
-                className={props.btnClassName}
-                fontSize={props.btnFontSize}
-                onClick={props.btnOnClick}
-            />
+            {props.btnText ? 
+                <Button 
+                    text={props.btnText}
+                    textClassName={props.textClassName}
+                    className={props.btnClassName}
+                    fontSize={props.btnFontSize}
+                    onClick={props.btnOnClick}
+                /> : <></>
+            }
+            {props.dropdownTitle ? 
+                <Dropdown 
+                    dropdownTitle={props.dropdownTitle}
+                    btnTextClassNane={props.dropdownBtnTextClassName}
+                    btnClassName={props.dropdownBtnClassName}
+                    btnTextFontSize={props.dropdownBtnTextFontSize}
+                    dropdownData={props.dropdownData}
+                /> : <></>
+            }
         </div>
     )
 }

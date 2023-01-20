@@ -2,7 +2,7 @@ export default function Button(props) {
 
     const styles = {
         button: {
-            borderRadius: props.borderRadius ? props.borderRadius : '0.5rem',
+            borderRadius: props.borderRadius ? props.borderRadius : '0.25rem',
             padding: props.padding ? props.padding : '0.5rem 1.5rem',
             cursor: 'pointer',
             border: 'none',
