@@ -1,4 +1,4 @@
-import iconDownArrow from '../../assets/icons/iconDownArrow.png'
+import iconDownArrow from '../../assets/icons/IconDownArrow.png'
 import Link from 'next/link'
 
 export default function VerticalScroll ({children, link, id, style, className}) { 
