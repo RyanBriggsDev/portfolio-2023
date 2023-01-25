@@ -191,3 +191,16 @@ a, a:hover, a:focus, a:active {
         top: 0;
         z-index: 1;
     }
+
+    /* utility inline link */
+
+    .inline-link {
+        text-decoration: underline;
+        display: inline-block;
+        cursor: pointer;
+        color: #007bff;
+    }
+
+    .inline-link:hover {
+        color: #007bff;
+    }

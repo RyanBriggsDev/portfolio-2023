@@ -1,5 +1,6 @@
 import Header from '../../../components/global/Header'
 import VerticalScroll from '../../../components/global/VerticalScroll'
+import InlineLink from '../../../components/global/type/Inlinelink'
 
 function index() {
 
@@ -15,11 +16,8 @@ function index() {
             btnText='Button Component'
             btnOnClick={() => console.log('click')}
             btnClassName='btn-primary'
-            dropdownTitle='Dropdown Component'
-            dropdownData={dropdownData}
-            dropdownClassName=''
-            dropdownBtnClassName='w-100 btn-primary'
           />
+        <p>This is an <InlineLink text='inline link' href='/' /> component</p>
         </VerticalScroll>
 
         <VerticalScroll
@@ -30,9 +28,9 @@ function index() {
             className='flex f-center f-d-col gap-1'
             h1='Number Two'
             label='Another Header Component'
-            btnText='Another Button Component'
-            btnOnClick={() => console.log('click')}
-            btnClassName='btn-primary'
+            dropdownTitle='Dropdown Component'
+            dropdownData={dropdownData}
+            dropdownBtnClassName='w-100 btn-primary'
           />
         </VerticalScroll>
     </>
