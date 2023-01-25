@@ -17,7 +17,6 @@ function index() {
             btnOnClick={() => console.log('click')}
             btnClassName='btn-primary'
           />
-        <p>This is an <InlineLink text='inline link' href='/' /> component</p>
         </VerticalScroll>
 
         <VerticalScroll
