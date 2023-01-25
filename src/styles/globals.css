@@ -4,6 +4,7 @@ html{scroll-behavior:smooth}
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -156,4 +157,37 @@ a, a:hover, a:focus, a:active {
         height: 66px;
         z-index: 10;
         bottom: 0;
+    }
+
+    /* utility dropdown */
+
+    .dropdown {
+        position: relative;
+        z-index: 99;
+        flex: content;
+    }
+
+    .dropdown-list {
+        position: absolute;
+        color: white;
+    }
+
+    .dropdown-item {
+        background-color: rgb(60, 60, 60);
+        cursor: pointer;
+        padding: 0.5rem 1.5rem;
+        transition: ease-in-out 300ms;
+    }
+
+    .dropdown-item:hover{
+        background-color: rgb(45, 45, 45);
+    }
+
+    .dropdown-fullpage-close {
+        height: 100%; 
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
     }

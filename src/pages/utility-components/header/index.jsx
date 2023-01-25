@@ -15,8 +15,10 @@ function index() {
             btnText='Button Component'
             btnOnClick={() => console.log('click')}
             btnClassName='btn-primary'
-            dropdownTitle='egg'
+            dropdownTitle='Dropdown Component'
             dropdownData={dropdownData}
+            dropdownClassName=''
+            dropdownBtnClassName='w-100 btn-primary'
           />
         </VerticalScroll>
 

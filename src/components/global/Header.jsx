@@ -19,10 +19,12 @@ export default function Header (props) {
             {props.dropdownTitle ? 
                 <Dropdown 
                     dropdownTitle={props.dropdownTitle}
-                    btnTextClassNane={props.dropdownBtnTextClassName}
+                    btnTextClassName={props.dropdownBtnTextClassName}
                     btnClassName={props.dropdownBtnClassName}
                     btnTextFontSize={props.dropdownBtnTextFontSize}
                     dropdownData={props.dropdownData}
+                    dropdownClassName={props.dropdownClassName}
+
                 /> : <></>
             }
         </div>

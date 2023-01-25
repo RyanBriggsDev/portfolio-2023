@@ -6,7 +6,6 @@ export default function Button(props) {
             padding: props.padding ? props.padding : '0.5rem 1.5rem',
             cursor: 'pointer',
             border: 'none',
-            width: props.width ? props.width : 'auto',
         }
     }
 
