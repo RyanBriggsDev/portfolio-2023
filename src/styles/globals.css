@@ -1,4 +1,7 @@
-html{scroll-behavior:smooth}
+html{
+    scroll-behavior:smooth;
+    height: 100%;
+}
 
 *, *::after, *::before, body {
     padding: 0;
@@ -11,7 +14,6 @@ body {
     background-color: black;
     color: white;
     font-size: 16px;
-    min-height: 100vh;
 }
 
 li, a {
@@ -134,30 +136,9 @@ a, a:hover, a:focus, a:active {
 
 
     /* utility vertical scroll */
-    .vertical-scroll {
-        height: 100vh;
+    .full-page {
         position: relative;
-    }
-
-    .vertical-scroll-link {
-        position: absolute;
-        bottom: 0;
-        width: 90vw;
-        height: 66px;
-        z-index: 11;
-        transition: bottom 300ms ease-in-out;
-    }
-
-    .vertical-scroll-link:hover{ 
-        bottom: 10px;
-    }
-
-    .vertical-scroll-arrow {
-        position: absolute;
-        width: 66px;
-        height: 66px;
-        z-index: 10;
-        bottom: 0;
+        height: 100vh;
     }
 
     /* utility dropdown */
