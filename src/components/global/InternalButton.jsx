@@ -12,7 +12,7 @@ export default function Button(props) {
     }
 
   return (
-    <Link href={props.href} scroll={false}>
+    <Link href={props.href} scroll={false} style={props.style}>
         <button 
             style={styles.button}
             className={props.className}

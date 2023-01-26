@@ -47,18 +47,19 @@ export default function Nav () {
             <NavMobile 
                 navLinksOpen={navLinksOpen}
                 mobileOnClick={() => setNavLinksOpen(!navLinksOpen)}
+                closeMobileMenu={() => setNavLinksOpen(false)}
             />
         </nav>
     )
 }
 
-function NavMobile ({navLinksOpen, mobileOnClick}) {
+function NavMobile ({navLinksOpen, mobileOnClick, closeMobileMenu}) {
 
     const router = useRouter()
     
-
     return (
         <div className="nav-mobile">
+            {navLinksOpen ? <div onClick={closeMobileMenu} className="nav-mobile-fullpage-close"></div> : <></>}
             <div className='nav-mobile-title py-05'>                            
             <h3 
                 onClick={() => router.push('/')} 
@@ -68,29 +69,33 @@ function NavMobile ({navLinksOpen, mobileOnClick}) {
                 </h3>
             </div>
             <div className="nav-mobile-container">
-                <div className="nav-mobile-links" style={{display: navLinksOpen ? 'flex' : 'none'}}>
+                <div className="nav-mobile-links w-100">
                     <InternalButton 
                         text='About'
                         href='#about'
-                        className='w-100'
+                        className='btn-primary w-100'
+                        style={{display: navLinksOpen ? 'flex' : 'none'}}
                         />
                     <InternalButton 
                         text='Projects'
                         href='#projects'
-                        className='w-100'
+                        className='btn-primary w-100'
+                        style={{display: navLinksOpen ? 'flex' : 'none'}}
                         />
                     <InternalButton 
                         text='Now'
                         href='#now'
-                        className='w-100'
+                        className='btn-primary w-100'
+                        style={{display: navLinksOpen ? 'flex' : 'none'}}
                         />
                     <InternalButton 
                         text='Contact'
-                        className='w-100'
+                        className='btn-primary w-100'
+                        style={{display: navLinksOpen ? 'flex' : 'none'}}
                         href='#contact'
                         />
                 </div>
-                <div onClick={mobileOnClick} className="nav-mobile-open hover pointer">{navLinksOpen ? 'Close Nav' : 'Open Nav'}</div>
+                <div onClick={mobileOnClick} className="nav-mobile-open hover pointer">Nav</div>
             </div>
         </div>
     )
