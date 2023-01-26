@@ -3,15 +3,23 @@ html{
     height: 100%;
 }
 
+/* fonts */
+
+@font-face {
+    font-family: nasalizationReg;
+    src: url('../assets//fonts/nasalizationReg.otf');
+}
+
 *, *::after, *::before, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: nasalizationReg;
 }
 
 body {
     background-color: black;
+    background-image: url('../assets/images/DamascusWallpaper1000.jpg');
     color: white;
     font-size: 16px;
 }
@@ -48,7 +56,28 @@ a, a:hover, a:focus, a:active {
 
 /* utility classes */
 
-    /* spacing */
+    /* psudo elements */
+
+    .pointer{
+        cursor: pointer;
+    }
+
+    .hover {
+        transition: ease-in-out 300ms;
+    }
+
+    .hover-blue-text:hover {
+        color:rgb(0, 89, 149);
+    }
+
+    /* utility type */
+
+    .font-1 {font-size: 1rem;}
+    .font-2 {font-size: 2rem;}
+    .font-3 {font-size: 3rem;}
+    .font-4 {font-size: 4rem;}
+
+    /* utility spacing */
 
         /* utility margin */
         .m-05 {margin: 0.5rem}
@@ -95,12 +124,17 @@ a, a:hover, a:focus, a:active {
 
     /* display */
 
+        .inline-block {display: inline-block;}
+
         /* utility flex */
         .flex {display: flex;}
         .f-d-col {flex-direction: column;}
         .fx-center {justify-content: center;}
         .fy-center {align-items: center;}
         .f-center {justify-content: center; align-items: center;}
+        .space-between {justify-content: space-between;}
+        .justify-center {justify-content: center;}
+        .items-center {align-items: center;}
         
         /* utility grid */
         .grid {display: grid;}
@@ -119,18 +153,21 @@ a, a:hover, a:focus, a:active {
     /* utility button */
 
     button {
-        background-color: rgb(202, 202, 202);
-        transition: background-color 0.5s ease;
+        background-color: black;
+        color: white;
+        transition: 300ms ease;
     }
 
-    button:hover {background-color: white;}
+    button:hover {color:rgb(0, 89, 149);}
 
     .btn-primary {
         background-color: rgb(0, 89, 149);
-        color: white;
     }
 
-    .btn-primary:hover {background-color: rgb(13, 58, 92);}
+    .btn-primary:hover {
+        background-color: rgb(13, 58, 92);
+        color: white;
+    }
 
     /* utility header */
 

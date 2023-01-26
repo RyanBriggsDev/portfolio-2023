@@ -4,9 +4,9 @@ import Dropdown from './Dropdown'
 export default function Header (props) {
 
     return (
-        <div className={`header ${props.className}`}>
-            <h1>{props.h1 ? props.h1 : 'h1'}</h1>
-            <p>{props.label ? props.label : 'label'}</p>
+        <div className={`header ${props.className ? props.className : ''}`}>
+            <h1 className={props.h1ClassName}>{props.h1 ? props.h1 : 'h1'}</h1>
+            <p className={props.labelClassName ? props.labelClassName : ''}>{props.label ? props.label : 'label'}</p>
             {props.btnText ? 
                 <Button 
                     text={props.btnText}
