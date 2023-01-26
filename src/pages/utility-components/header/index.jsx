@@ -16,6 +16,14 @@ function index() {
             btnOnClick={() => console.log('click')}
             btnClassName='btn-primary'
           />
+                    <Header 
+            className='flex f-center f-d-col gap-1'
+            h1='Header Component'
+            label='Header Component Label'
+            btnText='Button Component'
+            btnOnClick={() => console.log('click')}
+            btnClassName='btn-primary'
+          />
         </VerticalScroll>
 
         <VerticalScroll

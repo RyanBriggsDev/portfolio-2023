@@ -8,7 +8,7 @@ export default function VerticalScroll ({children, link, id, style, className}) 
     }
 
     return (
-        <div id={id ? id : ''} onClick={() => onClick()} className={`vertical-scroll flex f-center w-100 ${className ? className : ''}`} style={style ? style : null}>
+        <div id={id ? id : ''} onClick={() => onClick()} className={`vertical-scroll flex f-center w-100 f-d-col gap-3 ${className ? className : ''}`} style={style ? style : null}>
             {children}
             {link ? 
                 <Link className='vertical-scroll-link flex f-center' scroll={false} href={`#${link ? link : ''}`}>
