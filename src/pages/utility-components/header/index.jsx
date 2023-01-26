@@ -1,13 +1,11 @@
 import Header from '../../../components/global/Header'
-import VerticalScroll from '../../../components/global/VerticalScroll'
+import FullPage from '../../../components/global/FullPage'
 
 function index() {
 
   return (
     <>
-        <VerticalScroll
-          link='2'
-        >
+        <FullPage>
           <Header 
             className='flex f-center f-d-col gap-1'
             h1='Header Component'
@@ -16,18 +14,9 @@ function index() {
             btnOnClick={() => console.log('click')}
             btnClassName='btn-primary'
           />
-                    <Header 
-            className='flex f-center f-d-col gap-1'
-            h1='Header Component'
-            label='Header Component Label'
-            btnText='Button Component'
-            btnOnClick={() => console.log('click')}
-            btnClassName='btn-primary'
-          />
-        </VerticalScroll>
+        </FullPage>
 
-        <VerticalScroll
-          id='2'
+        <FullPage
           style={{backgroundColor: 'red'}}
         >
           <Header 
@@ -38,7 +27,7 @@ function index() {
             dropdownData={dropdownData}
             dropdownBtnClassName='w-100 btn-primary'
           />
-        </VerticalScroll>
+        </FullPage>
     </>
   )
 }

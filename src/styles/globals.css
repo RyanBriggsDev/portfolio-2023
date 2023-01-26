@@ -136,29 +136,9 @@ a, a:hover, a:focus, a:active {
 
 
     /* utility vertical scroll */
-    .vertical-scroll {
+    .full-page {
         position: relative;
         height: 100vh;
-    }
-
-    .vertical-scroll-link {
-        position: absolute;
-        bottom: 20%;
-        width: 90vw;
-        height: 66px;
-        z-index: 11;
-        transition: bottom 300ms ease-in-out;
-    }
-
-    .vertical-scroll-link:hover{ 
-        bottom: 19%;
-    }
-
-    .vertical-scroll-arrow {
-        /* position: absolute; */
-        width: 66px;
-        height: 66px;
-        z-index: 10;
     }
 
     /* utility dropdown */
