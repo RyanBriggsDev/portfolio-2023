@@ -124,6 +124,8 @@ a, a:hover, a:focus, a:active {
 
     /* display */
 
+        .inline-block {display: inline-block;}
+
         /* utility flex */
         .flex {display: flex;}
         .f-d-col {flex-direction: column;}
@@ -131,6 +133,7 @@ a, a:hover, a:focus, a:active {
         .fy-center {align-items: center;}
         .f-center {justify-content: center; align-items: center;}
         .space-between {justify-content: space-between;}
+        .justify-center {justify-content: center;}
         .items-center {align-items: center;}
         
         /* utility grid */

@@ -1,7 +1,50 @@
+/* desktop nav */
+
 nav {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: black;
+}
+
+/* mobile nav */
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-mobile-container {
+    border-radius: 0.25rem;
+    position: fixed;
+    bottom: 30%;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-mobile-links {
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(0, 89, 149);
+    padding: 0.5rem;
+}
+
+.nav-mobile-open {
+    border-radius: 0.25rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgb(0, 89, 149);
+}
+
+.nav-mobile-open:hover {
+    background-color: rgb(13, 58, 92);
+}
+
+@media screen and (max-width: 45rem) {
+    .nav-desktop {display: none;}
+    .nav-mobile {display: block;}
 }
