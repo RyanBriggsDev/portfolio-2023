@@ -32,6 +32,10 @@ export default function Nav () {
                                 href='#projects'
                             />
                             <InternalButton 
+                                text='Skills'
+                                href='#skills'
+                            />
+                            <InternalButton 
                                 text='Now'
                                 href='#now'
                             />
@@ -79,6 +83,12 @@ function NavMobile ({navLinksOpen, mobileOnClick, closeMobileMenu}) {
                     <InternalButton 
                         text='Projects'
                         href='#projects'
+                        className='btn-primary w-100'
+                        style={{display: navLinksOpen ? 'flex' : 'none'}}
+                        />
+                    <InternalButton 
+                        text='Skills'
+                        href='#skills'
                         className='btn-primary w-100'
                         style={{display: navLinksOpen ? 'flex' : 'none'}}
                         />
