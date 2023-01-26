@@ -1,6 +1,6 @@
 html{
     scroll-behavior:smooth;
-    height: -webkit-fill-available;
+    height: 100%;
 }
 
 *, *::after, *::before, body {
@@ -14,9 +14,6 @@ body {
     background-color: black;
     color: white;
     font-size: 16px;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    max-height: 100%;
 }
 
 li, a {
@@ -38,8 +35,6 @@ a, a:hover, a:focus, a:active {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    min-height: -webkit-fill-available;
-    max-height: 100%;
 }
 
 .container {
@@ -143,8 +138,6 @@ a, a:hover, a:focus, a:active {
     /* utility vertical scroll */
     .vertical-scroll {
         height: 100vh;
-        min-height: -webkit-fill-available;
-        max-height: 100%;
         position: relative;
     }
 
@@ -166,7 +159,7 @@ a, a:hover, a:focus, a:active {
         width: 66px;
         height: 66px;
         z-index: 10;
-        bottom: 0;
+        bottom: 3rem;
     }
 
     /* utility dropdown */

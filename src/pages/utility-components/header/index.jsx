@@ -1,6 +1,5 @@
 import Header from '../../../components/global/Header'
 import VerticalScroll from '../../../components/global/VerticalScroll'
-import InlineLink from '../../../components/global/type/Inlinelink'
 
 function index() {
 
