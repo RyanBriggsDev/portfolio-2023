@@ -1,4 +1,7 @@
-html{scroll-behavior:smooth}
+html{
+    scroll-behavior:smooth;
+    height: -webkit-fill-available;
+}
 
 *, *::after, *::before, body {
     padding: 0;
@@ -12,6 +15,7 @@ body {
     color: white;
     font-size: 16px;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 li, a {
@@ -33,6 +37,7 @@ a, a:hover, a:focus, a:active {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 .container {
@@ -136,6 +141,7 @@ a, a:hover, a:focus, a:active {
     /* utility vertical scroll */
     .vertical-scroll {
         height: 100vh;
+        min-height: -webkit-fill-available;
         position: relative;
     }
 
