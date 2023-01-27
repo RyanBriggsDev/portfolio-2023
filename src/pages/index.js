@@ -4,6 +4,7 @@ import FullPage from '../components/global/FullPage'
 import Header from '../components/global/Header'
 import Card from '../components/global/Card'
 import Button from '../components/global/Button'
+import Skills from '../components/Skills'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -29,7 +30,7 @@ export default function Home() {
       </Head>
 
         <FullPage id='home'>
-          <Container>
+          <Container className='mb-5'>
             <Header 
               h1={`React / Next.js Frontend Developer 👨‍💻`}
               h1ClassName='font-4'
@@ -40,7 +41,7 @@ export default function Home() {
         </FullPage>
 
       <FullPage id='about'>
-        <Container>
+        <Container className='mb-5'>
           <Header 
             h2={`About Me`}
             h2ClassName='font-3'
@@ -52,8 +53,8 @@ export default function Home() {
               cardBorder={true}
               cardPadding={true}
               cardRounded={true}
-              cardBg={true}
               cardBgHover={true}
+              minHeight={'20rem'}
             >
               <div className='about-me flex f-d-col gap-1'>
                 <p>
@@ -85,11 +86,11 @@ export default function Home() {
       </FullPage>
 
       <FullPage id='projects'>
-        <Container>
+        <Container className='mb-5'>
           <Header
             h2={`Projects`}
             h2ClassName='font-3'
-            label={`My most recent project.`}
+            label={`My most recent projects.`}
             labelClassName='font-2'
             externalUrl={false}
             btnText='View All'
@@ -103,13 +104,15 @@ export default function Home() {
               cardPadding={true}
               cardBgHover={true}
               cardBgImg={wrongmove}
+              minHeight={'20rem'}
+              backgroundClassName='divImg'
             >
             </Card>
             <Card 
               width={'w-100'}
               cardBorder={true}
               cardPadding={true}
-              style={{borderRadius: '0.25rem 0 0 0.25rem'}}
+              minHeight={'20rem'}
             >
               <div className="flex f-d-col gap-1 h-100 space-between">
 
@@ -148,13 +151,15 @@ export default function Home() {
               cardPadding={true}
               cardBgHover={true}
               cardBgImg={pokedex}
+              minHeight={'20rem'}
+              backgroundClassName='divImg'
             >
             </Card>
             <Card 
               width={'w-100'}
               cardBorder={true}
               cardPadding={true}
-              style={{borderRadius: '0.25rem 0 0 0.25rem'}}
+              minHeight={'20rem'}
             >
               <div className="flex f-d-col gap-1 h-100 space-between">
 
@@ -188,18 +193,21 @@ export default function Home() {
       </FullPage>
 
       <FullPage id='skills'>
-        <Container>
-          <Header 
+        <Container className='mb-5'>
+          <Header
             h2={`Skills`}
             h2ClassName='font-3'
             label={`My tech stack.`}
             labelClassName='font-2'
           />
+          <div>
+            <Skills />
+          </div>
         </Container>
       </FullPage>
 
       <FullPage id='now'>
-        <Container>
+        <Container className='mb-5'>
           <Header 
             h2={`Now`}
             h2ClassName='font-3'
@@ -210,7 +218,7 @@ export default function Home() {
       </FullPage>
 
       <FullPage id='contact'>
-        <Container>
+        <Container className='mb-5'>
           <Header 
             h2={`Contact`}
             h2ClassName='font-3'

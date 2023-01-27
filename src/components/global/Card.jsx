@@ -1,12 +1,13 @@
 export default function Card ({ 
     cardBorder, 
     cardPadding, 
-    cardBg, 
     cardBgHover, 
     cardRounded, 
     cardCenter,
     cardBgImg,
     className, 
+    minHeight,
+    backgroundClassName,
     width, 
     onClick,
     style,
@@ -19,14 +20,14 @@ export default function Card ({
                 `card
                 ${className ? className : ''} 
                 ${width ? width : ''}
-                ${cardBgImg ? 'divImg' : ''}
                 `}
             onClick={onClick}
+            style={style}
         >
-            <div 
+            <div
                 style={{
                     backgroundImage: `url(${cardBgImg ? cardBgImg.src : ''})`,
-                    minHeight: `${cardBgImg ? '20rem' : ''}`
+                    minHeight: `${minHeight ? minHeight : ''}`
                 }}
                 className=
                     {
@@ -34,11 +35,10 @@ export default function Card ({
                         ${cardBorder ? 'card-border-true' : ''}
                         ${cardPadding ? 'card-padding-true' : ''}
                         ${cardRounded ? 'card-rounded-true' : ''}
-                        ${cardBg ? 'card-bg-true' : ''}
                         ${cardBgHover ? 'card-bg-hover' : ''}
                         ${cardCenter ? 'flex f-d-col items-center justify-center' : ''}
-                        ${cardBgImg ? 'divImg' : ''}
                         ${onClick ? 'pointer' : ''}
+                        ${backgroundClassName ? backgroundClassName : ''}
                         `
                     }
                 >
