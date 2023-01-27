@@ -1,0 +1,22 @@
+
+.card-bg-true {
+    background-color: black;
+}
+
+.card-bg-hover {
+    transition: background-color 300ms ease-in-out;
+}
+
+.card-bg-hover:hover{background-color: rgba(0, 73, 121, 0.3)}
+
+.card-rounded-true {
+    border-radius: 0.25rem;
+}
+
+.card-border-true {
+    border: solid 1px rgb(0, 89, 149);
+}
+
+.card-padding-true {
+    padding: 1rem;
+}
