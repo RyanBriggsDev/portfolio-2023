@@ -56,6 +56,14 @@ a, a:hover, a:focus, a:active {
 
 /* utility classes */
 
+    /* mobile */
+
+    @media screen and (max-width: 45rem) {
+        #hide-mobile {
+            display: none;
+        }
+    }
+
     /* psudo elements */
 
     .pointer{
@@ -76,6 +84,19 @@ a, a:hover, a:focus, a:active {
     .font-2 {font-size: 2rem;}
     .font-3 {font-size: 3rem;}
     .font-4 {font-size: 4rem;}
+
+    @media screen and (max-width: 45rem) {
+        .font-1 {font-size: 0.8rem;}
+        .font-2 {font-size: 1.8rem;}
+        .font-3 {font-size: 2.6rem;}
+        .font-4 {font-size: 3.4rem;}
+    }
+
+    @media screen and (max-width: 30rem) {
+        .font-2 {font-size: 1.4rem;}
+        .font-3 {font-size: 2.2rem;}
+        .font-4 {font-size: 3rem;}
+    }
 
     /* utility spacing */
 
@@ -140,6 +161,13 @@ a, a:hover, a:focus, a:active {
         
         /* utility grid */
         .grid {display: grid;}
+        .grid-2 {grid-template-columns: 1fr 1fr;}
+        .grid-3 {grid-template-columns: 1fr 1fr 1fr}
+        .grid-2_60-40 {grid-template-columns: 0.6fr 0.4fr;}
+
+        @media screen and (max-width: 45rem) {
+            .grid-2, .grid-2_60-40 {grid-template-columns: 1fr}
+        }
 
     /* shadow */
 
