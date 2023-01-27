@@ -221,7 +221,7 @@ a, a:hover, a:focus, a:active {
     /* utility vertical scroll */
     .full-page {
         position: relative;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     /* utility dropdown */

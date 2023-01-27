@@ -95,6 +95,7 @@ export default function Home() {
             btnClassName='btn-primary my-05'
             btnOnClick={()=>router.push('/projects')}
           />
+
           <div className="project grid grid-2" style={{minHeight: '20rem'}}>
             <Card
               width={'w-100'}
@@ -139,6 +140,52 @@ export default function Home() {
               </div>
             </Card>
           </div>
+
+          <div className="project grid grid-2" style={{minHeight: '20rem'}}>
+            <Card
+              width={'w-100'}
+              cardPadding={true}
+              cardBgHover={true}
+              cardBgImg={wrongmove}
+            >
+            </Card>
+            <Card 
+              width={'w-100'}
+              cardBorder={true}
+              cardPadding={true}
+              style={{borderRadius: '0.25rem 0 0 0.25rem'}}
+            >
+              <div className="flex f-d-col gap-1 h-100 space-between">
+
+                <div className='flex f-d-col gap-1'>
+                  <h3 className='font-2'>Wrongmove</h3>
+                  <div className='flex f-d-col gap-1'>
+                    <p>
+                      A project working with a friend, Chris. Wrongmove is a clone of the popular property website Rightmove.co.uk. We build this using Next.JS and Vanilla CSS for the frontend. Chris did the backend work using an Express API and 3stgres database.
+                    </p>
+                    <p>
+                      Public users can view listings for sale/rent and filter based on min-max price, property type and min-bedrooms. Agents have full CRUD capabilities for rental/sales listings including image upload.
+                    </p>
+                  </div>
+                </div>
+                <div className='grid grid-2 gap-1'>
+                  <Button 
+                    text='GitHub Repo'
+                    className='btn-primary w-100' 
+                    externalUrl={true}
+                    href='https://github.com/ytsruh/wrongmove'
+                  />
+                  <Button 
+                    text='Live Site'
+                    className='w-100'
+                    externalUrl={true}
+                    href='https://wrongmove.ytsruh.com/'
+                  />
+                </div>
+              </div>
+            </Card>
+          </div>
+          
         </Container>
       </FullPage>
 
