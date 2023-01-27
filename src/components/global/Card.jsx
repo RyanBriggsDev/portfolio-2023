@@ -16,7 +16,7 @@ export default function Card ({
     return (
         <div 
             className={
-                `card h-100
+                `card
                 ${className ? className : ''} 
                 ${width ? width : ''}
                 ${cardBgImg ? 'divImg' : ''}
