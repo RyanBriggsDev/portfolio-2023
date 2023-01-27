@@ -8,7 +8,8 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 import logo from '../assets/images/logo.png'
-import wrongmove from '../assets/images/wrongmove.png'
+import wrongmove from '../assets/images/wrongmove.jpg'
+import pokedex from '../assets/images/pokedex.jpg'
 
 export default function Home() {
 
@@ -95,6 +96,7 @@ export default function Home() {
             btnClassName='btn-primary my-05'
             btnOnClick={()=>router.push('/projects')}
           />
+
           <div className="project grid grid-2" style={{minHeight: '20rem'}}>
             <Card
               width={'w-100'}
@@ -139,6 +141,49 @@ export default function Home() {
               </div>
             </Card>
           </div>
+
+          <div className="project grid grid-2" style={{minHeight: '20rem'}}>
+            <Card
+              width={'w-100'}
+              cardPadding={true}
+              cardBgHover={true}
+              cardBgImg={pokedex}
+            >
+            </Card>
+            <Card 
+              width={'w-100'}
+              cardBorder={true}
+              cardPadding={true}
+              style={{borderRadius: '0.25rem 0 0 0.25rem'}}
+            >
+              <div className="flex f-d-col gap-1 h-100 space-between">
+
+                <div className='flex f-d-col gap-1'>
+                  <h3 className='font-2'>Pokédex</h3>
+                  <div className='flex f-d-col gap-1'>
+                    <p>My first project after switching from Vanilla JavaScript to React JS. </p>
+                    <p>A Pokédex made using the PokéAPI. Users can search using a number or name and the app will use this to fetch data from the PokéAPI.</p>
+                    <p>The app will then display the Pokémon stats.</p>
+                  </div>
+                </div>
+                <div className='grid grid-2 gap-1'>
+                  <Button 
+                    text='GitHub Repo'
+                    className='btn-primary w-100' 
+                    externalUrl={true}
+                    href='https://github.com/RyanBriggsDev/ReactPokedex'
+                  />
+                  <Button 
+                    text='Live Site'
+                    className='w-100'
+                    externalUrl={true}
+                    href='https://pokedex.ryanbriggs.dev/'
+                  />
+                </div>
+              </div>
+            </Card>
+          </div>
+          
         </Container>
       </FullPage>
 
