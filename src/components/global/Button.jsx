@@ -9,6 +9,25 @@ export default function Button(props) {
         }
     }
 
+    if(props.externalUrl) { 
+        return (
+        <a href={props.href} target='_blank' rel="noreferrer" className="w-100">
+            <button 
+                style={styles.button}
+                className={props.className}
+                onClick={props.onClick}
+            >
+                <BtnText
+                    text={props.text}
+                    textClassName={props.textClassName}
+                    className={props.className}
+                    fontSize={props.fontSize}
+                />
+            </button>       
+        </a>
+        )
+    }
+
   return (
     <button 
         style={styles.button}

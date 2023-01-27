@@ -3,11 +3,17 @@ import Container from '../components/global/Container'
 import FullPage from '../components/global/FullPage'
 import Header from '../components/global/Header'
 import Card from '../components/global/Card'
+import Button from '../components/global/Button'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 import logo from '../assets/images/logo.png'
+import wrongmove from '../assets/images/wrongmove.png'
 
 export default function Home() {
+
+  const router = useRouter()
+
   return (
     <>
       <Head>
@@ -44,7 +50,7 @@ export default function Home() {
             <Card 
               cardBorder={true}
               cardPadding={true}
-              cardRounded={true }
+              cardRounded={true}
               cardBg={true}
               cardBgHover={true}
             >
@@ -67,7 +73,7 @@ export default function Home() {
               <Image 
                 style={{objectFit: 'contain'}}
                 id='hide-mobile'
-                className='w-100' 
+                className='w-100'
                 src={logo} 
                 alt='ryanbriggs.dev logo'
                 height={300}
@@ -80,14 +86,57 @@ export default function Home() {
       <FullPage id='projects'>
         <Container>
           <Header
-            h1={`Projects`}
-            h1ClassName='font-3'
-            label={`What I've been working on.`}
+            h2={`Projects`}
+            h2ClassName='font-3'
+            label={`My most recent project.`}
             labelClassName='font-2'
+            externalUrl={false}
+            btnText='View All'
+            btnClassName='btn-primary my-05'
+            btnOnClick={()=>router.push('/projects')}
           />
-          <div className="grid grid-3">
-            <Card width={'w-100'} cardBorder={true} cardPadding={true} cardRounded={true} cardBg={true}>
-              <Image src={logo} width={150} height={150}/>
+          <div className="project grid grid-2" style={{minHeight: '20rem'}}>
+            <Card
+              width={'w-100'}
+              cardPadding={true}
+              cardBgHover={true}
+              cardBgImg={wrongmove}
+            >
+            </Card>
+            <Card 
+              width={'w-100'}
+              cardBorder={true}
+              cardPadding={true}
+              style={{borderRadius: '0.25rem 0 0 0.25rem'}}
+            >
+              <div className="flex f-d-col gap-1 h-100 space-between">
+
+                <div className='flex f-d-col gap-1'>
+                  <h3 className='font-2'>Wrongmove</h3>
+                  <div className='flex f-d-col gap-1'>
+                    <p>
+                      A project working with a friend, Chris. Wrongmove is a clone of the popular property website Rightmove.co.uk. We build this using Next.JS and Vanilla CSS for the frontend. Chris did the backend work using an Express API and 3stgres database.
+                    </p>
+                    <p>
+                      Public users can view listings for sale/rent and filter based on min-max price, property type and min-bedrooms. Agents have full CRUD capabilities for rental/sales listings including image upload.
+                    </p>
+                  </div>
+                </div>
+                <div className='grid grid-2 gap-1'>
+                  <Button 
+                    text='GitHub Repo'
+                    className='btn-primary w-100' 
+                    externalUrl={true}
+                    href='https://github.com/ytsruh/wrongmove'
+                  />
+                  <Button 
+                    text='Live Site'
+                    className='w-100'
+                    externalUrl={true}
+                    href='https://wrongmove.ytsruh.com/'
+                  />
+                </div>
+              </div>
             </Card>
           </div>
         </Container>
@@ -96,8 +145,8 @@ export default function Home() {
       <FullPage id='skills'>
         <Container>
           <Header 
-            h1={`Skills`}
-            h1ClassName='font-3'
+            h2={`Skills`}
+            h2ClassName='font-3'
             label={`My tech stack.`}
             labelClassName='font-2'
           />
@@ -107,8 +156,8 @@ export default function Home() {
       <FullPage id='now'>
         <Container>
           <Header 
-            h1={`Now`}
-            h1ClassName='font-3'
+            h2={`Now`}
+            h2ClassName='font-3'
             label={`What I'm working on and future plans.`}
             labelClassName='font-2'
           />
@@ -118,8 +167,8 @@ export default function Home() {
       <FullPage id='contact'>
         <Container>
           <Header 
-            h1={`Contact`}
-            h1ClassName='font-3'
+            h2={`Contact`}
+            h2ClassName='font-3'
             label={`Fancy a chat? Connect with me.`}
             labelClassName='font-2'
           />

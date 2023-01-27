@@ -15,6 +15,8 @@ export default function Header (props) {
                     textClassName={props.textClassName}
                     className={props.btnClassName}
                     fontSize={props.btnFontSize}
+                    
+                    href={props.href}
                     onClick={props.btnOnClick}
                 /> : <></>
             }
