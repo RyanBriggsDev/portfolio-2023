@@ -8,7 +8,8 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 import logo from '../assets/images/logo.png'
-import wrongmove from '../assets/images/wrongmove.png'
+import wrongmove from '../assets/images/wrongmove.jpg'
+import pokedex from '../assets/images/pokedex.jpg'
 
 export default function Home() {
 
@@ -146,7 +147,7 @@ export default function Home() {
               width={'w-100'}
               cardPadding={true}
               cardBgHover={true}
-              cardBgImg={wrongmove}
+              cardBgImg={pokedex}
             >
             </Card>
             <Card 
@@ -158,14 +159,11 @@ export default function Home() {
               <div className="flex f-d-col gap-1 h-100 space-between">
 
                 <div className='flex f-d-col gap-1'>
-                  <h3 className='font-2'>Wrongmove</h3>
+                  <h3 className='font-2'>Pokédex</h3>
                   <div className='flex f-d-col gap-1'>
-                    <p>
-                      A project working with a friend, Chris. Wrongmove is a clone of the popular property website Rightmove.co.uk. We build this using Next.JS and Vanilla CSS for the frontend. Chris did the backend work using an Express API and 3stgres database.
-                    </p>
-                    <p>
-                      Public users can view listings for sale/rent and filter based on min-max price, property type and min-bedrooms. Agents have full CRUD capabilities for rental/sales listings including image upload.
-                    </p>
+                    <p>My first project after switching from Vanilla JavaScript to React JS. </p>
+                    <p>A Pokédex made using the PokéAPI. Users can search using a number or name and the app will use this to fetch data from the PokéAPI.</p>
+                    <p>The app will then display the Pokémon stats.</p>
                   </div>
                 </div>
                 <div className='grid grid-2 gap-1'>
@@ -173,13 +171,13 @@ export default function Home() {
                     text='GitHub Repo'
                     className='btn-primary w-100' 
                     externalUrl={true}
-                    href='https://github.com/ytsruh/wrongmove'
+                    href='https://github.com/RyanBriggsDev/ReactPokedex'
                   />
                   <Button 
                     text='Live Site'
                     className='w-100'
                     externalUrl={true}
-                    href='https://wrongmove.ytsruh.com/'
+                    href='https://pokedex.ryanbriggs.dev/'
                   />
                 </div>
               </div>
