@@ -41,7 +41,7 @@ export default function Home() {
         </FullPage>
 
       <FullPage id='about'>
-        <Container className='mb-5'>
+        <Container className='my-5'>
           <Header 
             h2={`About Me`}
             h2ClassName='font-3'
@@ -86,7 +86,7 @@ export default function Home() {
       </FullPage>
 
       <FullPage id='projects'>
-        <Container className='mb-5'>
+        <Container className='my-5'>
           <Header
             h2={`Projects`}
             h2ClassName='font-3'
@@ -193,7 +193,7 @@ export default function Home() {
       </FullPage>
 
       <FullPage id='skills'>
-        <Container className='mb-5'>
+        <Container className='my-5'>
           <Header
             h2={`Skills`}
             h2ClassName='font-3'
@@ -207,7 +207,7 @@ export default function Home() {
       </FullPage>
 
       <FullPage id='now'>
-        <Container className='mb-5'>
+        <Container className='my-5'>
           <Header 
             h2={`Now`}
             h2ClassName='font-3'
@@ -218,7 +218,7 @@ export default function Home() {
       </FullPage>
 
       <FullPage id='contact'>
-        <Container className='mb-5'>
+        <Container className='my-5'>
           <Header 
             h2={`Contact`}
             h2ClassName='font-3'

@@ -110,6 +110,7 @@ a, a:hover, a:focus, a:active {
         .my-1 {margin-top: 1rem; margin-bottom: 1rem;}
         .my-2 {margin-top: 2rem; margin-bottom: 2rem;}
         .my-3 {margin-top: 3rem; margin-bottom: 3rem;}
+        .my-5 {margin: 5rem 0;}
 
         .mx-05 {margin-left: 0.5rem; margin-right: 0.5rem;}
         .mx-1 {margin-left: 1rem; margin-right: 1rem;}
