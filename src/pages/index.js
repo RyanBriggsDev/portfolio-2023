@@ -6,6 +6,7 @@ import Card from '../components/global/Card'
 import Button from '../components/global/Button'
 import Skills from '../components/Skills'
 import Now from '../components/Now'
+import Contact from '../components/Contact'
 
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -228,6 +229,7 @@ export default function Home() {
             label={`Fancy a chat? Connect with me.`}
             labelClassName='font-2'
           />
+          <Contact />
         </Container>
       </FullPage>
 
