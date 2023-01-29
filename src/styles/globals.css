@@ -142,7 +142,7 @@ a, a:hover, a:focus, a:active {
         /* utility gap */
         .gap-05 {gap: 0.5rem}
         .gap-1 {gap: 1rem;}
-        .gap-2 {gap: 2rem;}
+        .gr {gap: 2rem;}
         .gap-3 {gap: 3rem;}
 
         /* utility width */
@@ -203,7 +203,7 @@ a, a:hover, a:focus, a:active {
             .grid-3 {grid-template-columns: repeat(2, 1fr);}
         }
 
-        @media screen and (max-width: 30rem) {
+        @media screen and (max-width: 22.5rem) {
             .grid-3 {grid-template-columns: 1fr;}
         }
 
@@ -296,4 +296,20 @@ a, a:hover, a:focus, a:active {
 
     footer {
         background-color: black;
+    }
+
+    /* skills component */
+
+    .skills-cards {min-height: 12.5rem;}
+
+    @media screen and (max-width: 45rem) {
+        .skills-cards {min-height: 10rem;}
+    }
+
+    @media screen and (max-width: 35rem) {
+        .skills-cards {min-height: 5rem;}
+    }
+
+    @media screen and (max-width: 30rem) {
+
     }

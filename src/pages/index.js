@@ -123,7 +123,7 @@ export default function Home() {
                   <h3 className='font-2'>Wrongmove</h3>
                   <div className='flex f-d-col gap-1'>
                     <p>
-                      A project working with a friend, Chris. Wrongmove is a clone of the popular property website Rightmove.co.uk. We build this using Next.JS and Vanilla CSS for the frontend. Chris did the backend work using an Express API and 3stgres database.
+                      A project working with a friend, Chris. Wrongmove is a clone of the popular property website Rightmove.co.uk. We build this using Next.JS and Vanilla CSS for the frontend. Chris did the backend work using an Express API and a Postgres database.
                     </p>
                     <p>
                       Public users can view listings for sale/rent and filter based on min-max price, property type and min-bedrooms. Agents have full CRUD capabilities for rental/sales listings including image upload.
@@ -149,6 +149,15 @@ export default function Home() {
           </div>
 
           <div className="project grid grid-2" style={{minHeight: '20rem'}}>
+            <Card
+              width={'w-100'}
+              cardPadding={true}
+              cardBgHover={true}
+              cardBgImg={pokedex}
+              minHeight={'20rem'}
+              backgroundClassName='divImg'
+            >
+            </Card>
             <Card 
               width={'w-100'}
               cardBorder={true}
@@ -180,15 +189,6 @@ export default function Home() {
                   />
                 </div>
               </div>
-            </Card>
-            <Card
-              width={'w-100'}
-              cardPadding={true}
-              cardBgHover={true}
-              cardBgImg={pokedex}
-              minHeight={'20rem'}
-              backgroundClassName='divImg'
-            >
             </Card>
           </div>
           
