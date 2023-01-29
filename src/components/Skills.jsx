@@ -16,6 +16,7 @@ export default function Skills () {
                 cardRounded={true}
                 backgroundClassName='divImgContain skills-cards'
                 style={{backgroundColor: 'rgba(0, 73, 121, 0.5)', borderRadius: '0.25rem', padding: '1rem'}}
+                alt='next.js framework logo'
             >
             </Card>
             <Card 
@@ -24,6 +25,7 @@ export default function Skills () {
                 cardRounded={true}
                 backgroundClassName='divImgContain skills-cards'
                 style={{backgroundColor: 'rgba(0, 73, 121, 0.5)', borderRadius: '0.25rem', padding: '1rem'}}
+                alt='react.js framework logo'
             >
             </Card>
             <Card 
@@ -32,6 +34,7 @@ export default function Skills () {
                 cardRounded={true}
                 backgroundClassName='divImgContain skills-cards'
                 style={{backgroundColor: 'rgba(0, 73, 121, 0.5)', borderRadius: '0.25rem', padding: '1rem'}}
+                alt='javascript logo'
             >
             </Card>
             <Card 
@@ -40,6 +43,7 @@ export default function Skills () {
                 cardRounded={true}
                 backgroundClassName='divImgContain skills-cards'
                 style={{backgroundColor: 'rgba(0, 73, 121, 0.5)', borderRadius: '0.25rem', padding: '1rem'}}
+                alt='sass css logo'
             >
             </Card>
             <Card 
@@ -48,6 +52,7 @@ export default function Skills () {
                 cardRounded={true}
                 backgroundClassName='divImgContain skills-cards'
                 style={{backgroundColor: 'rgba(0, 73, 121, 0.35)', borderRadius: '0.25rem', padding: '1rem'}}
+                alt='tailwind css logo'
             >
             </Card>
             <Card 
@@ -56,6 +61,7 @@ export default function Skills () {
                 cardRounded={true}
                 backgroundClassName='divImgContain skills-cards'
                 style={{backgroundColor: 'rgba(0, 73, 121, 0.5)', borderRadius: '0.25rem', padding: '1rem'}}
+                alt='github black octocat logo'
             >
             </Card>
         </div>

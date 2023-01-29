@@ -13,6 +13,7 @@ export default function Card ({
     onClick,
     style,
     children,
+    alt,
 }) {
 
     return (
@@ -31,6 +32,7 @@ export default function Card ({
                     minHeight: `${minHeight ? minHeight : ''}`,
                     backgroundColor: `${cardBg ? cardBg : ''}`,
                 }}
+                alt={alt}
                 className=
                     {
                         `font-1 h-100

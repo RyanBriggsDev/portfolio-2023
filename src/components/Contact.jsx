@@ -15,7 +15,7 @@ export default function Contact () {
             >
                 <a href="https://github.com/RyanBriggsDev" target={'_blank noreferrer'}>
                     <div className="flex f-d-col gap-2 f-center">
-                        <Image src={github} width={100} height={100} />
+                        <Image src={github} width={100} height={100} alt={'github octocat black logo'} />
                         <p>@ryanbriggsdev</p>
                     </div>
                 </a>
@@ -27,7 +27,7 @@ export default function Contact () {
             >
                 <a href="https://twitter.com/RyanBriggsDev" target={'_blank noreferrer'}>
                     <div className="flex f-d-col gap-2 f-center">
-                        <Image src={twitter} width={100} height={100} />
+                        <Image src={twitter} width={100} height={100} alt={'twitter blue logo'} />
                         <p>@ryanbriggsdev</p>
                     </div>
                 </a>
@@ -39,7 +39,7 @@ export default function Contact () {
             >
                 <a href="mailto:r@ryanbriggs.dev">
                     <div className="flex f-d-col gap-2 f-center">
-                        <Image src={envelope} width={100} height={100} />
+                        <Image src={envelope} width={100} height={100} alt={'white envelope'} />
                         <p>r@ryanbriggs.dev</p>
                     </div>
                 </a>

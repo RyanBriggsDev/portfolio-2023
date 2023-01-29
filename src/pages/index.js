@@ -107,6 +107,7 @@ export default function Home() {
               cardPadding={true}
               cardBgHover={true}
               cardBgImg={wrongmove}
+              alt={'wrongmove webpage home screenshot'}
               minHeight={'20rem'}
               backgroundClassName='divImg'
             >
@@ -154,6 +155,7 @@ export default function Home() {
               cardPadding={true}
               cardBgHover={true}
               cardBgImg={pokedex}
+              alt={'pokedex website screenshot'}
               minHeight={'20rem'}
               backgroundClassName='divImg'
             >

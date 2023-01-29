@@ -15,7 +15,7 @@ export default function Footer () {
                             <p>© <a href="https://github.com/ryanbriggsdev">Ryan Briggs</a> {year}</p>
                             <p><a href="https://ryanbriggs.dev">ryanbriggs.dev</a></p>
                         </div>
-                            <Image src={profilePic} width={150} height={150} />
+                            <Image src={profilePic} width={150} height={150} alt={'Ryan Briggs Profile Picture'}/>
                     </div>
                 </div>
             </Container>

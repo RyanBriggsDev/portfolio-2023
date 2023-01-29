@@ -39,7 +39,7 @@ export default function Now () {
                     <div className='grid grid-2 gap-1'>
                         <Button 
                           text='GitHub Repo'
-                          className='btn-primary w-100' 
+                          className='btn-primary w-100'
                           externalUrl={true}
                           href='https://github.com/RyanBriggsDev/certify'
                         />
