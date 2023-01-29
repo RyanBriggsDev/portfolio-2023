@@ -15,7 +15,6 @@ export default function Header (props) {
                     textClassName={props.textClassName}
                     className={props.btnClassName}
                     fontSize={props.btnFontSize}
-                    
                     href={props.href}
                     onClick={props.btnOnClick}
                 /> : <></>
@@ -28,7 +27,6 @@ export default function Header (props) {
                     btnTextFontSize={props.dropdownBtnTextFontSize}
                     dropdownData={props.dropdownData}
                     dropdownClassName={props.dropdownClassName}
-
                 /> : <></>
             }
         </div>
