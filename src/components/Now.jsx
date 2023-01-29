@@ -24,7 +24,7 @@ export default function Now () {
             >
                 <div className="flex f-d-col gap-2 space-between">
                     <h3 className="font-2">Certify</h3>
-                    <div className="flex f-d-col gap-1">
+                    <div className="flex f-d-col gap-1 py-1">
 
                         <p>
                             I am currently developing Certify, an application designed to streamline the management of training course records and facilitate the generation of professional certificates. This platform is intended for use by training providers and businesses that have staff requirements.    
