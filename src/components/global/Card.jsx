@@ -5,6 +5,7 @@ export default function Card ({
     cardRounded, 
     cardCenter,
     cardBgImg,
+    cardBg,
     className, 
     minHeight,
     backgroundClassName,
@@ -27,7 +28,8 @@ export default function Card ({
             <div
                 style={{
                     backgroundImage: `url(${cardBgImg ? cardBgImg.src : ''})`,
-                    minHeight: `${minHeight ? minHeight : ''}`
+                    minHeight: `${minHeight ? minHeight : ''}`,
+                    backgroundColor: `${cardBg ? cardBg : ''}`,
                 }}
                 className=
                     {

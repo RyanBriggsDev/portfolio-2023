@@ -5,6 +5,8 @@ import Header from '../components/global/Header'
 import Card from '../components/global/Card'
 import Button from '../components/global/Button'
 import Skills from '../components/Skills'
+import Now from '../components/Now'
+
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -146,15 +148,6 @@ export default function Home() {
           </div>
 
           <div className="project grid grid-2" style={{minHeight: '20rem'}}>
-            <Card
-              width={'w-100'}
-              cardPadding={true}
-              cardBgHover={true}
-              cardBgImg={pokedex}
-              minHeight={'20rem'}
-              backgroundClassName='divImg'
-            >
-            </Card>
             <Card 
               width={'w-100'}
               cardBorder={true}
@@ -162,7 +155,7 @@ export default function Home() {
               minHeight={'20rem'}
             >
               <div className="flex f-d-col gap-1 h-100 space-between">
-
+    
                 <div className='flex f-d-col gap-1'>
                   <h3 className='font-2'>Pokédex</h3>
                   <div className='flex f-d-col gap-1'>
@@ -186,6 +179,15 @@ export default function Home() {
                   />
                 </div>
               </div>
+            </Card>
+            <Card
+              width={'w-100'}
+              cardPadding={true}
+              cardBgHover={true}
+              cardBgImg={pokedex}
+              minHeight={'20rem'}
+              backgroundClassName='divImg'
+            >
             </Card>
           </div>
           
@@ -211,9 +213,10 @@ export default function Home() {
           <Header 
             h2={`Now`}
             h2ClassName='font-3'
-            label={`What I'm working on and future plans.`}
+            label={`What I'm working on right now.`}
             labelClassName='font-2'
           />
+          <Now />
         </Container>
       </FullPage>
 
