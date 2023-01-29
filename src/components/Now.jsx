@@ -8,6 +8,14 @@ export default function Now () {
     return (
         <div className="grid grid-2 gap-2">
             <Card
+                cardRounded={true}
+                cardPadding={true}
+                style={{backgroundImage: `url(${certifyLogoFull.src})`}}
+                alt='certify logo'
+                className={'divImgContain mh-300'}
+            >
+            </Card>
+            <Card
                 cardBorder={true}
                 cardRounded={true}
                 cardPadding={true}
@@ -44,14 +52,6 @@ export default function Now () {
                     </div>
                 </div>
                 <p></p>
-            </Card>
-            <Card
-                cardRounded={true}
-                cardPadding={true}
-                style={{backgroundImage: `url(${certifyLogoFull.src})`}}
-                alt='certify logo'
-                className={'divImgContain mh-300'}
-            >
             </Card>
         </div>
     )
