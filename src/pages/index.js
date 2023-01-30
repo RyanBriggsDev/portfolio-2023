@@ -15,9 +15,29 @@ import logo from '../assets/images/logo.png'
 import wrongmove from '../assets/images/wrongmove.jpg'
 import pokedex from '../assets/images/pokedex.jpg'
 
+import { useInView } from 'react-intersection-observer'
+
 export default function Home() {
 
   const router = useRouter()
+  const { ref: homeRef, inView: homeInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: projectsRef, inView: projectsInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: skillsRef, inView: skillsInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: nowRef, inView: nowInView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: contactRef, inView: contactInView } = useInView({
+    triggerOnce: true,
+  });
 
   return (
     <>
@@ -32,8 +52,8 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-        <FullPage id='home'>
-          <Container className='mb-5'>
+        <FullPage id='home' refProp={homeRef}>
+          <Container className={`mb-5 ${homeInView ? 'animate-in-right-1' : ''}`}>
             <Header 
               h1={`React / Next.js Frontend Developer 👨‍💻`}
               h1ClassName='font-4'
@@ -43,9 +63,9 @@ export default function Home() {
           </Container>
         </FullPage>
 
-      <FullPage id='about'>
-        <Container className='my-5'>
-          <Header 
+      <FullPage id='about' refProp={aboutRef}>
+        <Container className={`my-5 ${aboutInView ? 'animate-in-left-1' : ''}`} >
+          <Header
             h2={`About Me`}
             h2ClassName='font-3'
             label={`Learn a bit about me.`}
@@ -88,8 +108,8 @@ export default function Home() {
         </Container>
       </FullPage>
 
-      <FullPage id='projects'>
-        <Container className='my-5'>
+      <FullPage id='projects' refProp={projectsRef}>
+        <Container className={`my-5 ${projectsInView ? 'animate-in-right-1' : ''}`}>
           <Header
             h2={`Projects`}
             h2ClassName='font-3'
@@ -197,8 +217,8 @@ export default function Home() {
         </Container>
       </FullPage>
 
-      <FullPage id='skills'>
-        <Container className='my-5'>
+      <FullPage id='skills' refProp={skillsRef}>
+        <Container className={`my-5 ${skillsInView ? 'animate-in-left-1' : ''}`}>
           <Header
             h2={`Skills`}
             h2ClassName='font-3'
@@ -211,8 +231,8 @@ export default function Home() {
         </Container>
       </FullPage>
 
-      <FullPage id='now'>
-        <Container className='my-5'>
+      <FullPage id='now' refProp={nowRef}>
+        <Container className={`my-5 ${nowInView ? 'animate-in-right-1' : ''}`}>
           <Header 
             h2={`Now`}
             h2ClassName='font-3'
@@ -223,8 +243,8 @@ export default function Home() {
         </Container>
       </FullPage>
 
-      <FullPage id='contact'>
-        <Container className='my-5'>
+      <FullPage id='contact' refProp={contactRef}>
+        <Container className={`my-5 ${contactInView ? 'animate-in-left-1' : ''}`}>
           <Header 
             h2={`Contact`}
             h2ClassName='font-3'
