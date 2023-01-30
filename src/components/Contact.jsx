@@ -7,7 +7,7 @@ import Card from './global/Card'
 export default function Contact () {
 
     return (
-        <div className='grid grid-3 gap-1 f-center'>
+        <div className='grid grid-3 gap-1 f-center' >
             <Card
                 cardBgHover={true}
                 cardRounded={true}

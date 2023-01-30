@@ -313,3 +313,51 @@ a, a:hover, a:focus, a:active {
     @media screen and (max-width: 30rem) {
 
     }
+
+    /* animations */
+
+    .hidden {
+        position: relative;
+        transform: translateX(-200%);
+    }
+
+    .animate-in-right-1 {
+        display: flex;
+        animation-duration: 1s;
+        animation-name: container-enter-right;
+    }
+
+    @keyframes container-enter-right {
+        0% {
+            position: relative;
+            transform: translateX(-200%);
+        }
+        100% {
+            position: static;
+            transform: translateX(0);
+        }
+    }
+
+        .animate-in-left-1 {
+        display: flex;
+        animation-duration: 1s;
+        animation-name: container-enter-left;
+    }
+
+    @keyframes container-enter-left {
+        0% {
+            position: relative;
+            transform: translateX(200%);
+        }
+        100% {
+            position: static;
+            transform: translateX(0);
+        }
+    }
+
+    @media screen and (max-width: 45rem) {
+        .animate-in-left-1, .animate-in-right-1 {
+            animation-name: none;
+            animation-duration: 0;
+        }
+    }
