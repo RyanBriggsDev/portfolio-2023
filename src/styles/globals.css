@@ -180,6 +180,9 @@ a, a:hover, a:focus, a:active {
 
         .inline-block {display: inline-block;}
 
+        /* utility position */
+        .relative {position: relative;}
+
         /* utility flex */
         .flex {display: flex;}
         .f-d-col {flex-direction: column;}
@@ -191,6 +194,7 @@ a, a:hover, a:focus, a:active {
         .justify-center {justify-content: center;}
         .items-center {align-items: center;}
         .flex-flow {flex-flow: wrap}        
+        .bottom-right {justify-content: end; align-items: flex-end;}
         
         /* utility grid */
         .grid {display: grid;}

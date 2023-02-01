@@ -1,9 +1,15 @@
 import Button from "./Button"
 import Card from "./Card"
-
+import Image from "next/image"
 import wrongmove from '../../assets/images/wrongmove.jpg'
 import pokedex from '../../assets/images/pokedex.jpg'
 import expenseTracker from '../../assets/images/expenseTracker.jpg'
+
+import nextjs from '../../assets/images/skills/nextjs.svg'
+import css3 from '../../assets/images/skills/css3.svg'
+import react from '../../assets/images/skills/react.svg'
+import sass from '../../assets/images/skills/sass.svg'
+import javascript from '../../assets/images/skills/javascript.svg'
 
 export default function Projects () {
 
@@ -17,8 +23,12 @@ export default function Projects () {
               cardBgImg={wrongmove}
               alt={'wrongmove webpage home screenshot'}
               minHeight={'20rem'}
-              backgroundClassName='divImg'
+              backgroundClassName='divImg flex f-d-col w-100 bottom-right'
             >
+                <div className="grid grid-2 gap-1" style={{bottom: 0, left: 0, backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '0.25rem', padding: '0.5rem'}}>
+                    <Image alt="nextjs logo" src={nextjs} height={90} />
+                    <Image alt="plain css logo" src={css3} height={90} />
+                </div>
             </Card>
             <Card 
               width={'w-100'}
@@ -65,8 +75,12 @@ export default function Projects () {
               cardBgImg={pokedex}
               alt={'pokedex website screenshot'}
               minHeight={'20rem'}
-              backgroundClassName='divImg'
+              backgroundClassName='divImg flex f-d-col w-100 bottom-right'
             >
+                <div className="grid grid-2 gap-1" style={{bottom: 0, left: 0, backgroundColor: 'rgba(0, 0, 0, 0.75)', borderRadius: '0.25rem', padding: '0.5rem'}}>
+                    <Image alt={'react js logo'}src={react} height={90} />
+                    <Image alt={'sass css logo'}src={sass} height={90} />
+                </div>
             </Card>
             <Card 
               width={'w-100'}
@@ -102,7 +116,7 @@ export default function Projects () {
             </Card>
           </div>
 
-                    <div className="project grid grid-2" style={{minHeight: '20rem'}}>
+        <div className="project grid grid-2" style={{minHeight: '20rem'}}>
             <Card
               width={'w-100'}
               cardPadding={true}
@@ -110,8 +124,12 @@ export default function Projects () {
               cardBgImg={expenseTracker}
               alt={'expense tracker screenshot'}
               minHeight={'20rem'}
-              backgroundClassName='divImg'
-            >
+              backgroundClassName='divImg flex f-d-col w-100 bottom-right'
+              >
+                  <div className="grid grid-2 gap-1" style={{bottom: 0, left: 0, backgroundColor: 'rgba(0, 0, 0, 0.75)', borderRadius: '0.25rem', padding: '0.5rem'}}>
+                      <Image alt={'javascript logo'} src={javascript} height={90} />
+                      <Image alt={'sass css logo'} src={sass} height={90} />
+                  </div>
             </Card>
             <Card 
               width={'w-100'}
