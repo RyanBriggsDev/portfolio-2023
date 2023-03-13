@@ -98,9 +98,6 @@ export default function Home() {
             label={`My most recent projects.`}
             labelClassName="font-2"
             externalUrl={false}
-            // btnText='View All'
-            // btnClassName='btn-primary my-05'
-            // btnOnClick={()=>router.push('/projects')}
           />
           <Projects />
         </Container>
